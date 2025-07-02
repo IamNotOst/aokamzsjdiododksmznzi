@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Blockman Go Ost | IamNotOst</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo animate__animated animate__fadeIn">
+                    <i class="fas fa-gamepad"></i>
+                    <h1 data-i18n="appTitle">Blockman Go Ost</h1>
+                </div>
+                <div class="controls">
+                    <div class="theme-switcher">
+                        <button id="theme-toggle" aria-label="Toggle theme">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </div>
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="ru">RU</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="app-main">
+            <section class="hero animate__animated animate__fadeInUp">
+                <div class="avatar-container">
+                    <div class="avatar animate__animated animate__pulse animate__infinite animate__slower">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                </div>
+                <h2 data-i18n="ownerTitle">IamNotOst</h2>
+                <p class="subtitle" data-i18n="ownerSubtitle">Официальный русскоязычный помощник разработчиков игры Blockman Go</p>
+            </section>
+
+            <section class="info-section animate__animated animate__fadeIn animate__delay-1s">
+                <div class="section-header">
+                    <i class="fas fa-heart"></i>
+                    <h3 data-i18n="accountsTitle">Официальные аккаунты Telegram</h3>
+                </div>
+                <ul class="info-list">
+                    <li class="info-item clickable" data-copy="@OfficialOst">
+                        <i class="fas fa-check-circle"></i>
+                        <span data-i18n="account1">@OfficialOst - основной аккаунт для общения</span>
+                    </li>
+                    <li class="info-item clickable" data-copy="@IamNotOst">
+                        <i class="fas fa-check-circle"></i>
+                        <span data-i18n="account2">@IamNotOst - рабочий аккаунт для официальных чатов</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="info-section animate__animated animate__fadeIn animate__delay-1s">
+                <div class="section-header">
+                    <i class="fas fa-language"></i>
+                    <h3 data-i18n="languagesTitle">Говорю на нескольких языках</h3>
+                </div>
+                <ul class="info-list">
+                    <li class="info-item">
+                        <i class="fas fa-star"></i>
+                        <span data-i18n="lang1">Русский - отлично</span>
+                    </li>
+                    <li class="info-item">
+                        <i class="fas fa-star"></i>
+                        <span data-i18n="lang2">Английский - отлично</span>
+                    </li>
+                    <li class="info-item">
+                        <i class="fas fa-star"></i>
+                        <span data-i18n="lang3">Украинский - хорошо</span>
+                    </li>
+                    <li class="info-item">
+                        <i class="fas fa-star"></i>
+                        <span data-i18n="lang4">Китайский - изучаю</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="info-section animate__animated animate__fadeIn animate__delay-2s">
+                <div class="section-header">
+                    <i class="fas fa-info-circle"></i>
+                    <h3 data-i18n="additionalInfoTitle">Дополнительная информация</h3>
+                </div>
+                <ul class="info-list">
+                    <li class="info-item clickable" data-copy="1220407424">
+                        <i class="fas fa-id-card"></i>
+                        <span data-i18n="bgId1">BG ID 1: 1220407424</span>
+                    </li>
+                    <li class="info-item clickable" data-copy="350000">
+                        <i class="fas fa-id-card"></i>
+                        <span data-i18n="bgId2">BG ID 2: 350000</span>
+                    </li>
+                    <li class="info-item">
+                        <i class="fas fa-users"></i>
+                        <span data-i18n="bgClan">BG Clan: BedWar [Elder]</span>
+                    </li>
+                    <li class="info-item">
+                        <i class="fas fa-birthday-cake"></i>
+                        <span data-i18n="age">Возраст: 16 лет</span>
+                    </li>
+                    <li class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-i18n="location">Живу: Рязань (Россия)</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="notice-section animate__animated animate__fadeIn animate__delay-2s">
+                <div class="notice-content">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p data-i18n="supportNotice">Все вопросы касаемо игры решаем только в соответствующих официальных чатах. Индивидуально в личных сообщениях не помогаю.</p>
+                </div>
+                <a href="https://t.me/official_blockman_go/27" class="support-link" target="_blank" data-i18n="supportLink">Чат поддержки игры</a>
+            </section>
+        </main>
+
+        <footer class="app-footer animate__animated animate__fadeIn animate__delay-3s">
+            <p data-i18n="footerText">© 2023 Blockman Go Ost. Все права защищены.</p>
+        </footer>
+
+        <div class="notification" id="notification"></div>
+    </div>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="scripts/languages.js"></script>
+    <script src="scripts/theme.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
